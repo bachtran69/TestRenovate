@@ -1,10 +1,31 @@
+//{
+//  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+//  "extends": [
+//    "config:base"
+//  ],
+//  "schedule": [
+//    "at any time"
+//  ],
+//  "packageRules": [
+//    "matchPackagePatterns": ["build.gradle.kts"],
+//    "groupName":
+//  ]
+//}
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "groupName": "all dependencies",
+  "separateMajorMinor": false,
+  "groupSlug": "all",
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "groupName": "all dependencies",
+      "groupSlug": "all"
+    }
   ],
-  "schedule": [
-    "at any time"
-  ]
-
+  "lockFileMaintenance": {
+    "enabled": false
+  }
 }
+
