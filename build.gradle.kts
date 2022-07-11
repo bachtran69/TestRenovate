@@ -3,9 +3,9 @@ import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 
 plugins {
     id("org.springframework.boot") version "2.7.1"
-    id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    kotlin("jvm") version "1.6.21"
-    kotlin("plugin.spring") version "1.6.21"
+    id("io.spring.dependency-management") version "1.0.12.RELEASE"
+    kotlin("jvm") version "1.7.10"
+    kotlin("plugin.spring") version "1.7.10"
     id("org.springframework.experimental.aot") version "0.12.0"
 }
 
@@ -35,9 +35,9 @@ dependencies {
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    implementation("org.apache.logging.log4j:log4j-api:2.11.0")
-    implementation("org.apache.logging.log4j:log4j-core:2.11.0")
-    testImplementation("junit:junit:4.8")
+    implementation("org.apache.logging.log4j:log4j-api:2.18.0")
+    implementation("org.apache.logging.log4j:log4j-core:2.18.0")
+    testImplementation("junit:junit:4.13.2")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.13.3")
 }
 
